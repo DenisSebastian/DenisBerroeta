@@ -14,7 +14,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD. student in Data Science
+role: PhD student in Data Science
 
 # Organizations/Affiliations
 organizations:
@@ -52,32 +52,37 @@ skills:
     items:
       - name: R
         description: ''
-        percent: 80
-        icon: python
+        percent: 100
+        icon: r-project
         icon_pack: fab
       - name: Python
         description: ''
         percent: 80
-        icon: chart-line
-        icon_pack: fas
+        icon: python
+        icon_pack: fab
       - name: Data Science
         description: ''
-        percent: 60
-        icon: database
+        percent: 70
+        icon: chart-line
+        icon_pack: fas
+      - name: Remote Sensing
+        description: ''
+        percent: 70
+        icon: satellite
         icon_pack: fas
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: drones
         description: ''
         percent: 60
-        icon: person-hiking
-        icon_pack: fas
-      - name: Cats
+        icon: drone
+        icon_pack: fab
+      - name: Fútbol
         description: ''
         percent: 100
-        icon: cat
+        icon: futbol
         icon_pack: fas
       - name: Photography
         description: ''
@@ -121,15 +126,19 @@ email: 'denis.berroeta@uai.cl'
 user_groups:
   - Researchers
   - Visitors
----
-
+  
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
+
+
 Denis Berroeta is a researcher and analyst specialized in territorial projects using geostatistics and artificial intelligence methodologies. He has extensive experience in spatial data modeling and analysis, participating in various public and private research projects. He has led the design and implementation of spatial data analysis methodologies in different contexts.
+{style="text-align: justify;"}
 
 In addition, he has experience as a professor in areas such as Geostatistics, Territorial Criminology and Satellite Image Analysis for Environmental Monitoring and Natural Disaster Management.
+{style="text-align: justify;"}
 
-Currently, Denis is pursuing a Master's program and a PhD in Data Science, focusing on the detection of territorial changes in satellite images by using artificial intelligence methodologies
+Currently, Denis is pursuing a Master's program and a PhD in Data Science, focusing on the detection of territorial changes in satellite images by using artificial intelligence methodologies.
+{style="text-align: justify;"}

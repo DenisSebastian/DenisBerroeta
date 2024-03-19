@@ -1,6 +1,6 @@
 ---
 title: Thesis
-summary: An example of using the in-built project page.
+summary: Comming soon
 tags:
   - Deep Learning
   - Remote Sensing

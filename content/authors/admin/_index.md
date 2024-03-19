@@ -26,7 +26,7 @@ bio: My research interests include spatio-temporal analysis; image processing wi
 
 interests:
   - Artificial Intelligence
-  - Spatio-temporal Analysis
+  - Spatio-Temporal Analysis
   - Remote Sensing
 
 education:
@@ -79,15 +79,15 @@ skills:
         percent: 60
         icon: drone
         icon_pack: fab
-      - name: Fútbol
+      - name: Fotogrametry
         description: ''
-        percent: 100
-        icon: futbol
+        percent: 60
+        icon: cube
         icon_pack: fas
-      - name: Photography
+      - name: 3D Modeling
         description: ''
         percent: 80
-        icon: camera-retro
+        icon: cube
         icon_pack: fas
 
 

@@ -77,11 +77,16 @@ sections:
           location: Santiago
           date_start: '2017-09-01'
           date_end: '2021-03-31'
-          description: |2-
-              Responsibilities include:
-              * Analysing
-              * Modelling
-              * Deploying
+          description: Analysis, modeling and deployment tools focused on advanced territorial analysis methodologies for design, evaluation and monitoring of public policies.
+              
+        - title: "FONDECYT: Research Assistant"
+          company: Centro de Inteligencia Territorial - UAI
+          company_url: 'https://cit.uai.cl/'
+          company_logo: logo-cit
+          location: Santiago
+          date_start: '2022-01-01'
+          date_end: '2024-01-01'
+          description: Evolution of criminal activity in Chile during the Covid-19 pandemic and evaluation of security policies in commercial neighborhoods
           
     design:
       columns: '2'
@@ -98,32 +103,78 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - certificate_url: https://www.coursera.org
+        - certificate_url:
+          title: 'Geoanalysis'
           date_end: ''
-          date_start: '2021-01-25'
-          description: ''
-          icon: coursera
-          organization: Coursera
-          organization_url: https://www.coursera.org
-          title: Neural Networks and Deep Learning
+          date_start: '2023-11-01'
+          description: 'Diploma in Data Science for Public Policy. Fundamentals and techniques to analyze, model and represent territorial information for the design, implementation and evaluation of public policies.'
+          icon: goblab
+          organization: Laboratorio de Gobierno - UAI
+          organization_url: "https://goblab.uai.cl/"
+          url: 'https://gobierno.uai.cl/diplomado/diplomado-en-ciencia-de-datos-politicas-publicas/'
+        - certificate_url:
+          title: 'Spatial Data Management'
+          date_end: ''
+          date_start: '2023-10-01'
+          description: 'Diploma in Management and Territorial Evidence. 
+Interdisciplinary course focused on territorial analysis. It explores techniques to collect, explore and visualize geospatial data, with emphasis on modeling.'
+          icon: logo-cit
+          organization: Centro de Inteligencia Territorial - UAI
+          organization_url: "https://cit.uai.cl/"
+          url: 'https://designlab.uai.cl/diplomado/diplomado-en-data-y-evidencia-territorial/'
+        - certificate_url:
+          title: 'Advanced Crime Analysis Techniques applied with the use of Geographic Information Systems'
+          date_end: ''
+          date_start: '2023-09-01'
+          description: 'Interdisciplinary course focused ddevelop advanced capabilities in the use of geographic information systems for the analysis and prevention of criminal activity.'
+          icon: logo-cit
+          organization: Centro de Inteligencia Territorial - UAI
+          organization_url: "https://cit.uai.cl/"
+          url: 
+        - certificate_url:
+          title: 'Evidence for Resource Optimization'
+          date_end: ''
+          date_start: '2021-10-01'
+          description: 'Diploma in Human Wellbeing. Interdisciplinary course focused on provide the necessary skills to make decisions in order to optimize robust and relevant territorial evidence to guide the design of public policies and take advantage of market dynamics in the territory.'
+          icon: logo-cit
+          organization: Centro de Inteligencia Territorial - UAI
+          organization_url: "https://cit.uai.cl/"
           url: ''
-        - certificate_url: https://www.edx.org
+        - certificate_url:
+          title: 'Satellite Image Analysis'
           date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
+          date_start: '2021-03-01'
+          description: 'Diploma in Management and Territorial Evidence. Program aimed at providing participants with methodologies and tools for the construction of analysis elements that constitute territorial evidence, in different areas such as environment, urbanism, resources and natural capital, through the analysis of satellite images, to support decision making.'
+          icon: satellite
+          organization: Centro de Inteligencia Territorial - UAI
+          organization_url: "https://cit.uai.cl/"
+          url: 'https://designlab.uai.cl/diplomado/diplomado-en-data-y-evidencia-territorial/'
+        - certificate_url:
+          title: 'Deepening of spatial criminological analysis'
+          date_end: ''
+          date_start: '2021-10-01'
+          description: 'This course is designed to provide students with the ability to generate skills to analyze, model and represent spatial information. It also teaches efficient procedures for the analysis of causal relationships between territorial processes, policy implementation and crime evolution.'
+          icon: logo-cit
+          organization: Centro de Inteligencia Territorial - UAI
+          organization_url: "https://cit.uai.cl/"
+          url: ''
+        - certificate_url:
+          title: 'Applied Workshop on land Change Detection System for Internal Revenue Service (SII)'
+          date_end: ''
+          date_start: '2020-01-01'
+          description: 'Applied workshop to create a land use change detection system through satellite image analysis and Machine Learning.'
+          icon: satellite
+          organization: Centro de Inteligencia Territorial - UAI
+          organization_url: "https://cit.uai.cl/"
+          url: ''
+        - certificate_url:
+          title: 'Remote Sensing'
+          date_end: ''
+          date_start: '2018-01-01'
+          description: 'Course for professionals of the Chilean Aerial Photogrammetric Service Area Force, for the analysis and processing of satellite images for natural disaster management.'
+          icon: satellite
+          organization: Centro de Inteligencia Territorial - UAI
+          organization_url: "https://cit.uai.cl/"
           url: ''
     design:
       columns: '2'
@@ -132,7 +183,7 @@ sections:
     content:
       title: Recent Posts
       subtitle: ''
-      text: ''
+      text: 'Coming soon ...'
       # Choose how many pages you would like to display (0 = all pages)
       count: 5
       # Filter on criteria
@@ -181,14 +232,14 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="geo_ai" >}}
-    design:
-      columns: '1'
+  # - block: markdown
+  #   content:
+  #     title: Gallery
+  #     subtitle: ''
+  #     text: |-
+  #       # {{< gallery album="geo_ai" >}}
+  #   design:
+  #     columns: '1'
   - block: collection
     id: featured
     content:

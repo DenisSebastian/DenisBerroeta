@@ -62,33 +62,33 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
-          company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+        - title: Research Coordinator
+          company: Centro de Inteligencia Territorial - UAI
+          company_url: 'https://cit.uai.cl/'
+          company_logo: logo-cit
+          location: Santiago
+          date_start: '2021-04-01'
           date_end: ''
+          description: Leads a research team focused on territorial analysis methodologies for the design and evaluation of public policies.
+        - title: Senior Analyst
+          company: Centro de Inteligencia Territorial - UAI
+          company_url: 'https://cit.uai.cl/'
+          company_logo: logo-cit
+          location: Santiago
+          date_start: '2017-09-01'
+          date_end: '2021-03-31'
           description: |2-
               Responsibilities include:
-
               * Analysing
               * Modelling
               * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+          
     design:
       columns: '2'
   - block: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
+      title: 'Teaching'
       subtitle:
       # Date format: https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
@@ -186,7 +186,7 @@ sections:
       title: Gallery
       subtitle: ''
       text: |-
-        {{< gallery album="demo" >}}
+        {{< gallery album="geo_ai" >}}
     design:
       columns: '1'
   - block: collection
@@ -196,17 +196,17 @@ sections:
       filters:
         folders:
           - publication
-        featured_only: true
+        # featured_only: true
     design:
       columns: '2'
-      view: card
+      view: compact
   - block: collection
     content:
       title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
+      # text: |-
+      #   {{% callout note %}}
+      #   Quickly discover relevant content by [filtering publications](./publication/).
+      #   {{% /callout %}}
       filters:
         folders:
           - publication
@@ -235,38 +235,38 @@ sections:
       title: Contact
       subtitle:
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
+        You can contact me at the email address indicated:
       # Contact (add or remove contact options as necessary)
-      email: test@example.org
-      phone: 888 888 88 88
-      appointment_url: 'https://calendly.com'
+      email: denisberroeta@gmail.com
+      # phone: 888 888 88 88
+      # appointment_url: 'https://calendly.com/denisberroeta'
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+        street: Isla Negra
+        city: El Quisco
+        region: Valparaíso
+        # postcode: '94305'
+        country: Chile
+        country_code: CL
+      # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+      # office_hours:
+        # - 'Monday 10:00 to 13:00'
+        # - 'Wednesday 09:00 to 10:00'
       # Choose a map provider in `params.yaml` to show a map from these coordinates
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'  
+        latitude: '-33.4382703958928'
+        longitude: '-71.68954082473195'  
       contact_links:
         - icon: twitter
           icon_pack: fab
           name: DM Me
-          link: 'https://twitter.com/Twitter'
-        - icon: skype
+          link: 'https://twitter.com/denis_berr'
+        - icon: linkedin
           icon_pack: fab
-          name: Skype Me
-          link: 'skype:echo123?call'
+          link: 'https://www.linkedin.com/in/denis-berroeta'
+          name: Linkedin
         - icon: video
           icon_pack: fas
-          name: Zoom Me
+          name: Zoom
           link: 'https://zoom.com'
       # Automatically link email and phone or display as text?
       autolink: true

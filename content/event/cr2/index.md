@@ -6,7 +6,6 @@ event_url: https://simposio.cr2.cl/
 
 location: NOVOTEL
 address:
-  street: 6 Norte 745
   city: Viña del Mar
   region: Valparaíso
   # postcode: '94305'

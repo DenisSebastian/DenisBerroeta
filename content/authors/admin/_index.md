@@ -14,7 +14,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD student in Data Science
+role: PhD (candidate) in Data Science
 
 # Organizations/Affiliations
 organizations:
@@ -28,13 +28,14 @@ interests:
   - Artificial Intelligence
   - Spatio-Temporal Analysis
   - Remote Sensing
+  - LLM
 
 education:
   courses:
     - course: Ph.D. in Data Science (Candidate)
       institution: Adolfo Ibáñez University
       year: 2026
-    - course: M.S. in Data Science (Candidate)
+    - course: M.S. in Data Science
       institution: Adolfo Ibáñez University
       year: 2024
     - course: M.S. in Artificial Intelligence
@@ -60,14 +61,19 @@ skills:
         percent: 80
         icon: python
         icon_pack: fab
+      - name: Rust
+        description: ''
+        percent: 50
+        icon: rust
+        icon_pack: fab
       - name: Data Science
         description: ''
-        percent: 70
+        percent: 100
         icon: chart-line
         icon_pack: fas
       - name: Remote Sensing
         description: ''
-        percent: 70
+        percent: 90
         icon: satellite
         icon_pack: fas
   - name: Hobbies
@@ -114,9 +120,9 @@ social:
     link: https://github.com/DenisSebastian
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+  - icon: cv
+    icon_pack: ai
+    link: files/cv.pdf
 
 # Enter email to display  (if Gravatar enabled in Config)
 email: 'denis.berroeta@uai.cl'
@@ -140,5 +146,5 @@ Denis Berroeta is a researcher and analyst specialized in territorial projects u
 In addition, he has experience as a professor in areas such as Geostatistics, Territorial Criminology and Satellite Image Analysis for Environmental Monitoring and Natural Disaster Management.
 {style="text-align: justify;"}
 
-Currently, Denis is pursuing a Master's program and a PhD in Data Science, focusing on the detection of territorial changes in satellite images by using artificial intelligence methodologies.
+Currently, Denis is pursuing his Ph.D. in Data Science, where his research focuses on developing novel deep learning architectures for change detection in multi-temporal satellite imagery. His work aims to advance the state-of-the-art in remote sensing analysis through the application of visual foundation models.
 {style="text-align: justify;"}

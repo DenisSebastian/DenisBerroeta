@@ -13,6 +13,9 @@ authors:
 # Is this the primary user of the site?
 superuser: true
 
+avatar:
+  filename: avatar.png
+
 # Role/position
 role: PhD (candidate) in Data Science
 
@@ -110,7 +113,7 @@ social:
     icon_pack: fab
     link: https://twitter.com/denis_berr
   - icon: google-scholar
-    icon_pack: ai
+    icon_pack: fab
     link: https://scholar.google.com/citations?user=HlwGiMAAAAAJ&hl=es&oi=ao
   - icon: linkedin
     icon_pack: fab

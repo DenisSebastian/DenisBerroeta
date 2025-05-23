@@ -1,0 +1,106 @@
+
+{{/* Biography Block */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := site.GetPage (path.Join "/authors/" (.username | default "admin")) }}
+{{ if not $author }}
+  {{ errorf "Could not find an author page for username '%s' in %s. Create an author page at content/authors/%s/_index.md" (.username | default "admin") $block.File.Path (.username | default "admin") }}
+{{ end }}
+
+<div class="container">
+  <div class="row">
+    <!-- Avatar column -->
+    <div class="col-12 col-md-4 text-center">
+      {{ with $author.Params.avatar }}
+        <!-- Debug info -->
+        <div style="display: none;">
+          Author File Dir: {{ $author.File.Dir }}
+        </div>
+        
+        {{ $avatar_path := .filename }}
+        {{ $avatar_image := resources.Get (printf "media/authors/admin/%s" $avatar_path) }}
+        {{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
+        <div class="mb-3">
+          {{ if $avatar_image }}
+            {{ $avatar_image := $avatar_image.Fill "400x400 Center" }}
+            <img class="avatar avatar-{{ $avatar_shape }} portrait" src="{{ $avatar_image.RelPermalink }}" alt="{{ $author.Title }}">
+          {{ else }}
+            <!-- Mensaje de depuración si la imagen no se encuentra -->
+            <div class="alert alert-warning">
+              Avatar image not found at: authors/admin/{{ $avatar_path }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+      
+      <h1>{{ $author.Title }}</h1>
+      <div class="mb-2">{{ $author.Params.role }}</div>
+      
+      {{ with $author.Params.organizations }}
+        <div class="mb-3">
+          {{ range . }}
+            <div>
+              {{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+      
+      <!-- Social icons -->
+      {{ with $author.Params.social }}
+        <div class="d-flex justify-content-center mb-3">
+          {{ range . }}
+            <a href="{{ .link }}" class="mx-1">
+              <i class="{{ .icon_pack }} fa-{{ .icon }}"></i>
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+    
+    <!-- Biography column -->
+    <div class="col-12 col-md-8">
+      <h2>Biography</h2>
+      {{ with $author.Content }}
+        <div class="article-style fs-5 mb-4">
+          {{ . }}
+        </div>
+      {{ end }}
+      
+      <div class="row">
+        <!-- Interests section -->
+        <div class="col-md-6">
+          <h3>Interests</h3>
+          {{ with $author.Params.interests }}
+            <ul class="ul-interests">
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+        
+        <!-- Education section -->
+        <div class="col-md-6">
+          <h3>Education</h3>
+          {{ with $author.Params.education }}
+            <ul class="ul-edu fa-ul">
+              {{ range .courses }}
+                <li>
+                  <i class="fa-li fas fa-graduation-cap"></i>
+                  <div class="description">
+                    <p class="course">{{ .course }}, {{ .year }}</p>
+                    <p class="institution">{{ .institution }}</p>
+                  </div>
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

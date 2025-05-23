@@ -21,13 +21,14 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Hugo Blox Builder.'
+    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
     twitter: 'GetResearchDev'
   analytics:
-    google_analytics: 'G-1BPR1J2K6M'
+    google_analytics: ''
     baidu_tongji: ''
-    google_tag_manager: ''
-    microsoft_clarity: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
   verification:
     google: ''
     baidu: ''
@@ -37,18 +38,18 @@ marketing:
 header:
   navbar:
     enable: true
-    align: l
-    show_logo: true
-    show_language: false
-    show_day_night: true
+    blox: "navbar"
+    fixed_to_top: true
     show_search: true
-    highlight_active_link: true
+    show_theme_chooser: true
+    logo:
+      text: "Denis Berroeta"
 
 # Site footer
 
 footer:
   copyright:
-    notice: '© {2024} Denis Berroeta. This work is licensed under {license}'
+    notice: '© {2025} Denis Berroeta. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
